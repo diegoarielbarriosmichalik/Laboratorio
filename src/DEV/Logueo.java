@@ -14,7 +14,7 @@ public class Logueo extends javax.swing.JFrame {
         setLocationRelativeTo(null);
 
         setTitle("Blocked Access");
-        setIconImage(new ImageIcon(getClass().getResource("/IMAGES/4k_icon.png")).getImage());
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/4k_icon.png")).getImage());
 
         jTextField1.requestFocus();
         Conexion.Iniciar_Conexion();
@@ -142,10 +142,11 @@ public class Logueo extends javax.swing.JFrame {
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         if ((evt.getKeyCode() == KeyEvent.VK_ENTER)) {
-            boolean entro = DEV.Metodos.getIngresar();
-            if (entro == true) {
+//            boolean entro = DEV.Metodos.getIngresar();
+//            if (entro == true) {
                 this.setVisible(false);
-            }
+                new Principal().setVisible(true);
+//            }
         }
     }//GEN-LAST:event_jTextField1KeyPressed
 
